@@ -1,5 +1,7 @@
+import Scorepad from "@/components/Scorepad";
+
 export default function Home() {
   return (
-    <div>Hello World</div>
+    <Scorepad></Scorepad>
   )
 }
