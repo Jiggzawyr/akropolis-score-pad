@@ -3,7 +3,7 @@ import { ScoreTable } from "@/models/score";
 export const scoreTableStart: ScoreTable = {
     scoreRows: [
         {
-            player: "1",
+            player: "Player 1",
             scoreBlocks: [
                 {   stars: 0, tiles: 0, total: 0, },
                 {   stars: 0, tiles: 0, total: 0, },
@@ -15,7 +15,7 @@ export const scoreTableStart: ScoreTable = {
             scoreTotal: 0,
         },
         {
-            player: "2",
+            player: "Player 2",
             scoreBlocks: [
                 {   stars: 0, tiles: 0, total: 0, },
                 {   stars: 0, tiles: 0, total: 0, },
@@ -27,7 +27,7 @@ export const scoreTableStart: ScoreTable = {
             scoreTotal: 0,
         },
         {
-            player: "3",
+            player: "Player 3",
             scoreBlocks: [
                 {   stars: 0, tiles: 0, total: 0, },
                 {   stars: 0, tiles: 0, total: 0, },
@@ -39,7 +39,7 @@ export const scoreTableStart: ScoreTable = {
             scoreTotal: 0,
         },
         {
-            player: "4",
+            player: "Player 4",
             scoreBlocks: [
                 {   stars: 0, tiles: 0, total: 0, },
                 {   stars: 0, tiles: 0, total: 0, },
