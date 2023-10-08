@@ -4,7 +4,7 @@ export interface ScoreBlock {
     total: number;
 }
 
-export interface ScoreRow {
+export interface ScorepadColumn {
     player: string;
     scoreBlocks: ScoreBlock[];
     scoreStone: number
@@ -13,5 +13,5 @@ export interface ScoreRow {
 }
 
 export interface ScoreTable {
-    scoreRows: ScoreRow[];
+    scorepadColumns: ScorepadColumn[];
 }

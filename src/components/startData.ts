@@ -1,7 +1,7 @@
 import { ScoreTable } from "@/models/score";
 
 export const scoreTableStart: ScoreTable = {
-    scoreRows: [
+    scorepadColumns: [
         {
             player: "Player 1",
             scoreBlocks: [
