@@ -20,5 +20,6 @@ body {
 
 @font-face {
   font-family: "Akropolis";
+  font-display: swap; /* Ensure text remains visible during webfont load */
   src: url("/fonts/Akropolis.ttf");
 }

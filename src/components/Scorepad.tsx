@@ -48,38 +48,38 @@ const Scorepad = () => {
         <div className="m-auto flex justify-center p-4">
             <div className="w-[80px]">
                 <div className="border-b-8 border-r-8 border-dashed border-slate-700">
-                    <div className="flex items-center  h-[40px]">
-                        <img src="/players.png" className="max-h-[90%] m-auto p-[5px]"/>
+                    <div className="flex justify-center items-center  h-[40px]">
+                        <img src="/players.png" alt="Players" className="max-h-[90%] m-auto p-[5px]"/>
                     </div>
                 </div>
                 <div className="border-r-8 border-dashed border-slate-700">
-                    <div className="flex items-center border-b-2 border-black h-[60px]">
-                        <img src="/tiles/house.png" className="max-h-[90%] m-auto"/>
+                    <div className="flex justify-center items-center border-b-2 border-black h-[60px]">
+                        <img src="/tiles/house.png" alt="House" className="max-h-[90%] m-auto"/>
                     </div>
                 </div>
                 <div className="border-r-8 border-dashed border-slate-700">
-                    <div className="flex items-center  border-b-2 border-black h-[60px]">
-                        <img src="/tiles/market.png" className="max-h-[90%] m-auto"/>
+                    <div className="flex justify-center items-center  border-b-2 border-black h-[60px]">
+                        <img src="/tiles/market.png" alt="Market" className="max-h-[90%] m-auto"/>
                     </div>
                 </div>
                 <div className="border-r-8 border-dashed border-slate-700">
-                    <div className="flex items-center  border-b-2 border-black h-[60px]">
-                        <img src="/tiles/barrack.png" className="max-h-[90%] m-auto"/>
+                    <div className="flex justify-center items-center  border-b-2 border-black h-[60px]">
+                        <img src="/tiles/barrack.png" alt="Barrack" className="max-h-[90%] m-auto"/>
                     </div>
                 </div>
                 <div className="border-r-8 border-dashed border-slate-700">
-                    <div className="flex items-center  border-b-2 border-black h-[60px]">
-                        <img src="/tiles/temple.png" className="max-h-[90%] m-auto"/>
+                    <div className="flex justify-center items-center  border-b-2 border-black h-[60px]">
+                        <img src="/tiles/temple.png" alt="Temple" className="max-h-[90%] m-auto"/>
                     </div>
                 </div>
                 <div className="border-r-8 border-dashed border-slate-700">
-                    <div className="flex items-center  border-b-2 border-black h-[60px]">
-                        <img src="/tiles/garden.png" className="max-h-[90%] m-auto"/>
+                    <div className="flex justify-center items-center  border-b-2 border-black h-[60px]">
+                        <img src="/tiles/garden.png" alt="Garden" className="max-h-[90%] m-auto"/>
                     </div>
                 </div>
                 <div className="border-r-8 border-dashed border-slate-700">
-                    <div className="flex items-center  border-b-2 border-black h-[40px]">
-                        <img src="/stone.png" className="max-h-[90%] m-auto"/>
+                    <div className="flex justify-center items-center  border-b-2 border-black h-[40px]">
+                        <img src="/stone.png" alt="Stone" className="max-h-[90%] m-auto"/>
                     </div>
                 </div>
                 <div className="text-center">
