@@ -1,54 +1,28 @@
-import { ScoreTable } from "@/models/score";
+import { ScoreBlock, ScorepadColumn, ScoreTable } from "@/models/score";
 
-export const scoreTableStart: ScoreTable = {
-    scorepadColumns: [
-        {
-            player: "Player 1",
-            scoreBlocks: [
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-            ],
-            scoreStone: 0,
-            scoreTotal: 0,
-        },
-        {
-            player: "Player 2",
-            scoreBlocks: [
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-            ],
-            scoreStone: 0,
-            scoreTotal: 0,
-        },
-        {
-            player: "Player 3",
-            scoreBlocks: [
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-            ],
-            scoreStone: 0,
-            scoreTotal: 0,
-        },
-        {
-            player: "Player 4",
-            scoreBlocks: [
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-                {   stars: 0, tiles: 0, total: 0, },
-            ],
-            scoreStone: 0,
-            scoreTotal: 0,
-        },
-    ]
-}
+export const createEmptyBlock = (): ScoreBlock => ({
+    stars: 0,
+    tiles: 0,
+    total: 0,
+});
+
+export const createEmptyPlayer = (index: number): ScorepadColumn => ({
+    player: `Player ${index}`,
+    scoreBlocks: [
+        createEmptyBlock(),
+        createEmptyBlock(),
+        createEmptyBlock(),
+        createEmptyBlock(),
+        createEmptyBlock(),
+    ],
+    scoreStone: 0,
+    scoreTotal: 0,
+});
+
+export const createEmptyTable = (playerCount: number): ScoreTable => ({
+    scorepadColumns: Array.from({ length: playerCount }, (_, i) =>
+        createEmptyPlayer(i + 1)
+    ),
+});
+
+export const scoreTableStart: ScoreTable = createEmptyTable(4);
